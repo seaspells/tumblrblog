@@ -9,9 +9,20 @@ html {
 }
 
 body {
-   background: white;
     overflow: auto;
     background-color: hsla(4, 82%, 96%, 1);
+}
+
+@media only screen and (max-width: 1366px) {
+    
+    .navbar li {
+    box-sizing: border-box;   
+    }
+    
+    .maincontent {
+    max-width: 80%;
+    height: auto;
+    }
 }
 
 #container {
@@ -63,29 +74,30 @@ body {
     color: #ff70cd;
     background-color: hsla(360, 100%, 100%, 0.7);
     font-style: italic;
+    display: block;
 }
 
 .navbar ul li{
+    position: ;
     list-style: none;
     font-family: 'Lato', sans serif;
     font-size: 1.3rem;
-    padding-bottom: 11px;
 }
 
 .navbar ul {
     padding-bottom: 3em;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    padding-top: 3em;
 }
 
 .navbar li {
     background-color: hsla(360, 100%, 100%, 0.7);
     padding-left: 1em;
-    padding-right: 2em;
+    padding-right: 1em;
     margin-left: -1em;
+    margin-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+
 }
 
 .navbar a {
@@ -100,18 +112,15 @@ a:hover {
 
 #content {
     width: 100%;
-    float: right;
+    box-sizing: border-box;
 }
 
 .maincontent {
-    width: 80%;
-    background: #ffffff;
     position: absolute;
     right: 0;
-    top: 0;
-    bottom: 0;
+    margin-left: 280px;
+    background: #ffffff;
     float: right;
-    box-sizing: border-box;
     background-color: hsla(4, 82%, 96%, 1);
     background-position: center;
     max-width: 100%;
@@ -146,4 +155,3 @@ a:hover {
     padding-bottom: 10px;
     background-color: hsla(360, 100%, 100%, 0.7);
 }
-

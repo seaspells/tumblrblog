@@ -5,7 +5,7 @@
 
 html {
     font: 16px;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 body {
@@ -13,23 +13,6 @@ body {
     background-color: hsla(4, 82%, 96%, 1);
 }
 
-@media only screen and (max-width: 768px) {
-  
-    .navbar, #container-navbar {
-      width: 100%;
-      float: left;
-    }
-
-    .navbar ul li {
-      text-align: center;
-    }
-    
-    .maincontent, #content {
-      width: 100%;
-      clear: left;
-      overflow: visible;
-      }
-}
 #container-navbar {
     width: 250px;
     overflow: hidden;
@@ -116,7 +99,6 @@ a:hover {
 
 #content {
     width: 100%;
-    box-sizing: border-box;
 }
 
 .maincontent {
@@ -124,8 +106,6 @@ a:hover {
     background: #ffffff;
     float: right;
     background-color: hsla(4, 82%, 96%, 1);
-    background-position: center;
-    max-width: 100%;
     padding-top: 2em;
     padding-right: 2em;
 }
@@ -158,3 +138,30 @@ a:hover {
     background-color: hsla(360, 100%, 100%, 0.7);
 }
 
+@media only screen and (max-width: 768px) {
+  
+    .navbar, #container-navbar {
+      width: 100%;
+      float: left;
+      position: static;
+    }
+
+    .navbar ul li {
+      text-align: center;
+    }
+    
+    .maincontent, #content {
+      width: 100%;
+      clear: left;
+      margin: 0;
+      padding: 0;
+      }
+      
+     .maincontent h2 {
+       padding: 5%;
+     }
+     
+     .maincontent p {
+       padding: 10%;
+     }
+}

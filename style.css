@@ -15,12 +15,29 @@ body {
 
 @media only screen and (max-width: 1366px) {
     
+        
     .navbar {
     overflow: scroll;
     height: auto;
     }
     
-     #content {
+    .navbar h2 {
+        font-size: 2rem;
+    }
+    
+    .imgwrapper {
+      display: none;
+    }
+    
+    .bio {
+      font-size: 1rem;
+    }
+    
+    .navbar ul li {
+      font-size: 1rem;
+    }
+    
+    #content {
       box-sizing: border-box;
     }
     
@@ -29,7 +46,6 @@ body {
     overflow: scroll;
     position: fixed;
     }
-    
 }
 
 #container {

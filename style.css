@@ -15,14 +15,21 @@ body {
 
 @media only screen and (max-width: 1366px) {
     
-    .navbar li {
-    box-sizing: border-box;   
+    .navbar {
+    overflow: scroll;
+    height: auto;
+    }
+    
+     #content {
+      box-sizing: border-box;
     }
     
     .maincontent {
-    max-width: 80%;
-    height: auto;
+      height: 90%;
+    overflow: scroll;
+    position: fixed;
     }
+    
 }
 
 #container {
@@ -80,7 +87,6 @@ body {
 .navbar ul li{
     position: ;
     list-style: none;
-    font-family: 'Lato', sans serif;
     font-size: 1.3rem;
 }
 
@@ -104,6 +110,7 @@ body {
     text-decoration: none;
     color: black;
     letter-spacing: -1px;
+    font-family: 'Lato', sans-serif;
 }
 
 a:hover {
@@ -155,3 +162,4 @@ a:hover {
     padding-bottom: 10px;
     background-color: hsla(360, 100%, 100%, 0.7);
 }
+

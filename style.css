@@ -195,15 +195,12 @@ a:hover {
     
     #container-navbar {
         height: 100% auto;
+        box-sizing: border-box;
     }
     
     .navbar {
         height: 100% auto;
     }
 
-    .navbar ul li {
-        margin: 0px;
-        padding: 0px;
-    }
     
 }

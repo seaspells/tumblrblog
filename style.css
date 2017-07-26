@@ -21,7 +21,6 @@ body {
     height: 100%;
     box-sizing: border-box;
     position: fixed;
-    overflow: scroll;
 }
 
 .navbar h2 {
@@ -151,8 +150,10 @@ a:hover {
   
     .navbar, #container-navbar {
       width: 100%;
+        position: static;
+      overflow: auto;
+      display: block;
       float: left;
-      position: static;
     }
 
     .navbar ul li {
@@ -161,13 +162,16 @@ a:hover {
     
     .maincontent, #content {
       width: 100%;
-      clear: left;
       margin: 0;
       padding: 0;
+      clear: left;
+      display: block;
       }
       
      .maincontent h2 {
        padding: 5%;
+       display: block;
+       text-align: center;
      }
      
      .maincontent p {
@@ -180,12 +184,22 @@ a:hover {
     }
     
     body {
+        clear: left;
+        width: 100%;
         overflow: auto;
         height: 100%;
     }
 } 
 
 @media only screen and (max-width 1366px) {
+    
+    #container-navbar {
+        height: 100% auto;
+    }
+    
+    .navbar {
+        height: 100% auto;
+    }
 
     .navbar ul li {
         margin: 0px;

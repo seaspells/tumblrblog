@@ -165,4 +165,7 @@ a:hover {
      .maincontent p {
        padding: 10%;
      }
+    
+    html {
+        overflow: scroll;
 }

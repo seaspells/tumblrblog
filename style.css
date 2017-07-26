@@ -5,7 +5,7 @@
 
 html {
     font: 16px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 body {

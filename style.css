@@ -6,26 +6,33 @@
 html {
     font: 16px;
     overflow: hidden;
+    height: 100%;
 }
 
 body {
     overflow: scroll;
+    height: 100%;
     background-color: hsla(4, 82%, 96%, 1);
 }
 
 #container-navbar {
-    width: 250px;
     overflow: hidden;
-    background: #d6ffcc;
+    width: 30%;
+    height: 100%;
     box-sizing: border-box;
+    position: fixed;
+    overflow: scroll;
 }
 
 .navbar h2 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     font-size: 3rem;
-    color: black;
-    padding: 1em 0;
+    color: aliceblue;
+    text-shadow: -1px 0px 3px #ed1d77;
+    margin: 1em 0;
+    padding-top: 1px;
+    padding-bottom: 10px;
 }
 
 .imgwrapper {
@@ -38,9 +45,8 @@ body {
 
 .navbar {
     background-image: url(http://68.media.tumblr.com/tumblr_m8lrzneQ6s1rdbpi2o1_500.png);
-    width: 250px;
+    width: 100%;
     float: left;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -54,12 +60,13 @@ body {
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 1em;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-left: 1em;
     margin-right: 1em;
+    font-weight: 200;
     font-family: "Roboto Condensed", sans-serif;
     color: #ff70cd;
-    background-color: hsla(360, 100%, 100%, 0.7);
+    background-color: hsla(360, 100%, 100%, 0.5);
     font-style: italic;
     display: block;
 }
@@ -76,7 +83,7 @@ body {
 }
 
 .navbar li {
-    background-color: hsla(360, 100%, 100%, 0.7);
+    background-color: hsla(360, 100%, 100%, 0.5);
     padding-left: 1em;
     padding-right: 1em;
     margin-left: -1em;
@@ -88,13 +95,14 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    text-shadow: 0px 1px 3px #ed1d77;
+    color: aliceblue;
     letter-spacing: -1px;
     font-family: 'Lato', sans-serif;
 }
 
 a:hover {
-    color: hsla(321, 100%, 72%, 1);
+    color: hsla(322, 100%, 50%, 1);
 }
 
 #content {
@@ -102,7 +110,7 @@ a:hover {
 }
 
 .maincontent {
-    margin-left: 280px;
+    margin-left: 32%;
     background: #ffffff;
     float: right;
     background-color: hsla(4, 82%, 96%, 1);
@@ -117,6 +125,7 @@ a:hover {
     padding-left: 10px;
     padding-right: :10px;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 1px aliceblue;
     color: #ff70cd;
     background-color: hsla(360, 100%, 100%, 0.7);
     
@@ -138,34 +147,7 @@ a:hover {
     background-color: hsla(360, 100%, 100%, 0.7);
 }
 
-@media only screen and (max-width 1366px) and (min-width: 769px) { /** 13" laptops **/
-    
-    html {
-        overflow: visible;
-    }
-
-    body {
-        overflow: auto;
-    }
-    
-    .navbar {
-        background: black;
-    }
-    
-    #navbar ul {
-        padding: 0;
-        margin: 0;
-    }
-    
-    .navbar li {
-        
-        padding: 0;
-        margin: 0;
-    
-    }
-}
-
-@media only screen and (max-width: 768px) { /** mobile phones **/
+@media only screen and (max-width: 768px) { 
   
     .navbar, #container-navbar {
       width: 100%;
@@ -193,6 +175,21 @@ a:hover {
      }
     
     html {
-        overflow: scroll;
+        overflow: hidden;
+        height: 100%;
     }
+    
+    body {
+        overflow: auto;
+        height: 100%;
+    }
+} 
+
+@media only screen and (max-width 1366px) {
+
+    .navbar ul li {
+        margin: 0px;
+        padding: 0px;
+    }
+    
 }

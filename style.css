@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    overflow: auto;
+    overflow: scroll;
     background-color: hsla(4, 82%, 96%, 1);
 }
 
@@ -138,7 +138,34 @@ a:hover {
     background-color: hsla(360, 100%, 100%, 0.7);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width 1366px) and (min-width: 769px) { /** 13" laptops **/
+    
+    html {
+        overflow: visible;
+    }
+
+    body {
+        overflow: auto;
+    }
+    
+    .navbar {
+        background: black;
+    }
+    
+    #navbar ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navbar li {
+        
+        padding: 0;
+        margin: 0;
+    
+    }
+}
+
+@media only screen and (max-width: 768px) { /** mobile phones **/
   
     .navbar, #container-navbar {
       width: 100%;
@@ -158,8 +185,7 @@ a:hover {
       }
       
      .maincontent h2 {
-       padding: 0 10%;
-       text-align: center;
+       padding: 5%;
      }
      
      .maincontent p {
@@ -168,4 +194,5 @@ a:hover {
     
     html {
         overflow: scroll;
+    }
 }
